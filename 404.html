@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lost in the woods · Twilight Reverb</title>
+<style>
+  /* Absolute paths: this page is served for any missing URL, at any depth */
+  @font-face { font-family: "Twilight"; src: url("/twilight-reverb/twilight.ttf") format("truetype"); }
+  body { margin:0; font-family: "Twilight", Impact, "Arial Black", sans-serif; color:#fff; background:#0b0a1a url(/twilight-reverb/background.png) center/cover fixed; }
+  .wrap { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px 20px; box-sizing:border-box; background:rgba(5,5,20,.55); }
+  .bear-wrap { position:relative; width:240px; max-width:60vw; aspect-ratio:1; margin-bottom:8px; }
+  .bear-wrap::before { content:""; position:absolute; inset:4%; border-radius:50%; background:radial-gradient(circle, rgba(170,200,245,.32) 0%, rgba(120,160,225,.12) 45%, transparent 70%); filter:blur(6px); }
+  img.bear { position:relative; width:100%; height:auto; filter:drop-shadow(0 0 10px rgba(160,195,240,.25)); animation:sway 6s ease-in-out 1s infinite; }
+  h1 { font-family: "Twilight", Impact, sans-serif; font-size:clamp(56px,12vw,110px); letter-spacing:4px; margin:0; color:transparent; background:linear-gradient(180deg,#f2f6ff 25%,#9fbbe6 100%); -webkit-background-clip:text; background-clip:text; filter:drop-shadow(1.5px 0 0 #0b1230) drop-shadow(-1.5px 0 0 #0b1230) drop-shadow(0 1.5px 0 #0b1230) drop-shadow(0 -1.5px 0 #0b1230) drop-shadow(3px 3px 0 #000) drop-shadow(0 0 14px rgba(120,170,255,.4)); }
+  p.tag { font-family: Georgia, serif; font-size:20px; max-width:560px; line-height:1.5; margin:12px 0 0; }
+  a.btn { font-family: "Twilight", Impact, sans-serif; display:inline-block; margin-top:24px; padding:16px 36px; font-size:22px; letter-spacing:2px; background:#fff; color:#141033; text-decoration:none; border:3px solid #000; box-shadow:5px 5px 0 #000; }
+  a.btn:hover { transform:translate(-2px,-2px); box-shadow:7px 7px 0 #000; }
+  .meta { font-family: Georgia, serif; font-size:14px; opacity:.8; margin-top:28px; }
+  .meta a { color:#fff; }
+  @keyframes sway { 0%,100% { transform:rotate(0deg); } 50% { transform:rotate(-2deg) translateY(-3px); } }
+  @media (prefers-reduced-motion: reduce) { img.bear { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bear-wrap"><img class="bear" src="/twilight-reverb/404bear.png" alt="A small brown bear, a little lost"></div>
+  <h1>404</h1>
+  <p class="tag">This path wandered off into the woods.</p>
+  <a class="btn" href="/twilight-reverb/">BACK TO TWILIGHT REVERB</a>
+  <div class="meta"><a href="/">ursiformmusic.com</a></div>
+</div>
+</body>
+</html>
